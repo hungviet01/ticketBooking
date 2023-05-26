@@ -117,7 +117,7 @@ export default function Header() {
 								<a href="#news">Ưu đãi</a>
 							</li>
 							<li className="hotline">
-								<Popover placement="bottom" title="SĐT" content={"0378343128"} trigger="click">
+								<Popover placement="bottom" title="SĐT" content={"0935361065"} trigger="click">
 									<a href="#">
 										<img src="https://storage.googleapis.com/fe-production/svgIcon/hotline-icon.svg" alt className="object-cover" />
 										Hotline

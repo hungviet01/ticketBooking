@@ -91,7 +91,7 @@ export default function Details(props) {
 			),
 			description: (
 				<div className="description">
-					Là chương trình bảo vệ an toàn cho hành khách sử dụng dịch vụ của VeXeRe trong mùa dịch Covid. VeXeRe đồng hành các nhà xe đối tác triển khai biện pháp bảo vệ an toàn cho hành khách, như sau: (1) Kiểm tra thân nhiệt hành khách trước khi lên xe
+					Là chương trình bảo vệ an toàn cho hành khách sử dụng dịch vụ của TicktetBooking trong mùa dịch Covid. TicktetBooking đồng hành các nhà xe đối tác triển khai biện pháp bảo vệ an toàn cho hành khách, như sau: (1) Kiểm tra thân nhiệt hành khách trước khi lên xe
 					<br />
 					(2) Trang bị nước rửa tay;
 					<br />
