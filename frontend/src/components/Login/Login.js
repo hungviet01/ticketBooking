@@ -28,8 +28,8 @@ export default function Login(props) {
 
 	return (
 		<Form name="basic" autoComplete="off" onFinish={formik.handleSubmit}>
-			<Form.Item label="Email" name="email">
-				<Input onChange={(e) => formik.setFieldValue("email", e.target.value)} name="email" />
+			<Form.Item label="Email" name="email" style={{marginLeft: '25px'}}>
+				<Input onChange={(e) => formik.setFieldValue("email", e.target.value)} name="email"/>
 				<p className="text-red-500 text-xs italic mb-0">{formik.errors.email}</p>
 			</Form.Item>
 
@@ -44,6 +44,7 @@ export default function Login(props) {
 
 			<Form.Item wrapperCol={{offset: 8, span: 8}}>
 				<Button
+					
 					type="primary"
 					htmlType="submit"
 					onClick={() => {

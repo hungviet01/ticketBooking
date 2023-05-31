@@ -42,23 +42,23 @@ export default function Register(props) {
 		<>
 			<Form name="basic" autoComplete="off">
 				<Form.Item label="Tên" name="name">
-					<Input onChange={(e) => formik.setFieldValue("name", e.target.value)} name="name" value={formik.values.name} />
+					<Input style={{width: '471px'}} onChange={(e) => formik.setFieldValue("name", e.target.value)} name="name" value={formik.values.name} />
 					<p className="text-red-500 text-xs italic mb-0">{formik.errors.name}</p>
 				</Form.Item>
 				<Form.Item label="Số điện thoại" name="phone">
-					<Input onChange={(e) => formik.setFieldValue("phone", e.target.value)} name="phone" value={formik.values.phone} />
+					<Input style={{width: '471px'}} onChange={(e) => formik.setFieldValue("phone", e.target.value)} name="phone" value={formik.values.phone} />
 					<p className="text-red-500 text-xs italic mb-0">{formik.errors.phone}</p>
 				</Form.Item>
 				<Form.Item label="Email" name="email">
-					<Input onChange={(e) => formik.setFieldValue("email", e.target.value)} name="email" value={formik.values.email} />
+					<Input style={{width: '471px'}} onChange={(e) => formik.setFieldValue("email", e.target.value)} name="email" value={formik.values.email} />
 					<p className="text-red-500 text-xs italic mb-0">{formik.errors.email}</p>
 				</Form.Item>
 				<Form.Item label="Mật khẩu" name="passWord">
-					<Input.Password onChange={(e) => formik.setFieldValue("passWord", e.target.value)} name="passWord" value={formik.values.passWord} />
+					<Input.Password style={{width: '471px'}} onChange={(e) => formik.setFieldValue("passWord", e.target.value)} name="passWord" value={formik.values.passWord} />
 					<p className="text-red-500 text-xs italic mb-0">{formik.errors.passWord}</p>
 				</Form.Item>
 				<Form.Item label="Xác nhận mật khẩu" name="passWord">
-					<Input.Password onChange={(e) => formik.setFieldValue("confirmPassword", e.target.value)} name="passWord" value={formik.values.confirmPassword} />
+					<Input.Password style={{width: '471px'}} onChange={(e) => formik.setFieldValue("confirmPassword", e.target.value)} name="passWord" value={formik.values.confirmPassword} />
 					<p className="text-red-500 text-xs italic mb-0">{formik.errors.confirmPassword}</p>
 				</Form.Item>
 				<Form.Item wrapperCol={{offset: 8, span: 8}}>
@@ -80,7 +80,7 @@ export default function Register(props) {
 						okText="Yes"
 						cancelText="No"
 					>
-						<Button type="primary" htmlType="submit">
+						<Button style={{marginLeft: '28px'}} type="primary" htmlType="submit">
 							Đăng ký
 						</Button>
 					</Popconfirm>

@@ -61,23 +61,26 @@ export default function AdminVehicle() {
 			title: "Hình Ảnh",
 			render: (text, vehicle) => {
 				return (
-					<div>
+					<div style={{ textAlign: "center", marginTop: "8px" }}>
 						{vehicle.vehicleOfImage.map((item, index) => {
-							return <Image preview={{visible: vehicle.visible}} width={75} height={60} style={{borderRadius: "50%"}} src={item.link} key={index} />;
+							return <Image preview={{visible: vehicle.visible}} width={75} height={60} style={{borderRadius: "50%", marginRight: "8px"}} src={item.link} key={index} />;
 						})}
-						<Button
-							type="primary"
-							onClick={() => {
-								dispatch({
-									type: SET_MODAL,
-									title: "Cập Nhật Ảnh Xe",
-									content: <ImageVehicle id={vehicle.id} />,
-									width: 1000,
-								});
-							}}
-						>
-							Xem Chi Tiết
-						</Button>
+						<div>
+							<Button
+								style={{marginTop: "8px" }}
+								type="primary"
+								onClick={() => {
+									dispatch({
+										type: SET_MODAL,
+										title: "Cập Nhật Ảnh Xe",
+										content: <ImageVehicle id={vehicle.id} />,
+										width: 1000,
+									});
+								}}
+							>
+								Xem Chi Tiết
+							</Button>
+						</div>
 					</div>
 				);
 			},
@@ -92,7 +95,7 @@ export default function AdminVehicle() {
 			title: "Số Ghế",
 			render: (text, vehicle) => {
 				return (
-					<div className="text-xl font-bold">
+					<div style={{display: "flex", flexDirection: "column"}} className="text-xl font-bold">
 						{vehicle.seatVehicle?.length}
 						<Button
 							type="primary"
@@ -117,7 +120,7 @@ export default function AdminVehicle() {
 			title: "Nhà Xe",
 			render: (text, vehicle) => {
 				return (
-					<div style={{cursor: "not-allowed"}}>
+					<div style={{display: "flex", alignItems: "center", cursor: "not-allowed"}}>
 						<DirectionsBusIcon />
 						{vehicle.passengerCar?.name}
 					</div>
@@ -173,6 +176,7 @@ export default function AdminVehicle() {
 			<div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
 				<h1>Danh sách xe</h1>
 				<Button
+					style={{display: "flex", alignItems: "center"}}
 					type="primary"
 					className="mb-3"
 					onClick={() => {

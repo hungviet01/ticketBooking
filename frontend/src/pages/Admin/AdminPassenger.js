@@ -146,6 +146,7 @@ export default function AdminPassenger() {
 			<div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
 				<h1>Danh sách các nhà xe</h1>
 				<Button
+					style={{display: 'flex',alignItems: 'center'}}
 					type="primary"
 					className="mb-3"
 					onClick={() => {
@@ -156,7 +157,7 @@ export default function AdminPassenger() {
 						});
 					}}
 				>
-					<AddBusinessIcon className="mr-2" />
+					<AddBusinessIcon className="mr-2"/>
 					Thêm Nhà Xe
 				</Button>
 				<Table columns={columns} dataSource={listPassenger} />

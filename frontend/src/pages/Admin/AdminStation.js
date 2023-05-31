@@ -49,6 +49,7 @@ export default function AdminStation() {
 				return (
 					<div className="flex items-center">
 						<Button
+							style={{display: 'flex',alignItems: 'center'}}
 							type="primary"
 							onClick={() => {
 								dispatch({
@@ -112,6 +113,7 @@ export default function AdminStation() {
 			<div className="site-layout-background" style={{padding: 24, minHeight: 360}}>
 				<h1>Danh sách bến xe</h1>
 				<Button
+					style={{display: 'flex',alignItems: 'center'}}
 					type="primary"
 					className="mb-3"
 					onClick={() => {
